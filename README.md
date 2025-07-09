@@ -1,57 +1,34 @@
-Swiggy-Delivery-Time-Prediction
-==============================
+# SwiggySense – Food Delivery Time Prediction
 
-Build Ml project that predict food delivery time in minutes
+SwiggySense is a comprehensive machine learning project designed to predict food delivery time in minutes using real-world delivery data. The project is tailored for food delivery platforms such as Swiggy to enhance time estimation accuracy by analyzing features like distance, traffic, weather, restaurant behavior, and delivery agent performance.
 
-Project Organization
-------------
+The repository implements a scalable and reproducible ML pipeline following industry-standard practices, from raw data ingestion to model evaluation and deployment automation.
 
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+---
 
+## Project Overview
 
---------
+**Objective**:  
+Build a machine learning model that accurately predicts the estimated delivery time for food orders.
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+**Dataset**:  
+Historical food delivery records containing features such as order location, delivery location, delivery distance, restaurant preparation time, traffic levels, and more.
+
+**Technologies and Tools**:
+- Programming Language: Python
+- Data Handling & Modeling: Pandas, Scikit-learn, LightGBM
+- ML Workflow & MLOps: DVC (Data Version Control), Docker, GitHub Actions, Makefile
+- Visualization: Matplotlib, Seaborn
+- Environment: Virtualenv, requirements.txt
+
+**Key Features**:
+- Modular pipeline for data preprocessing, feature engineering, model training, and evaluation
+- End-to-end reproducibility using version control and dependency tracking
+- Model experimentation using Jupyter notebooks
+- CI/CD enabled with automated testing and linting via GitHub Actions
+- Containerized environment for consistent deployment
+
+**Expected Output**:  
+A trained and validated machine learning model that can predict delivery time with high accuracy, enabling better operational planning and customer communication.
+
+---
